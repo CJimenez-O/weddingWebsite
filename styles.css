@@ -175,6 +175,34 @@ position: absolute;
     }
 }
 
+
+/* our story section */
+.story-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.couple-photo{
+  margin:0;
+  padding: 0;
+}
+
+
+.story-title{
+  display: grid;
+  justify-content: center;
+  font-size: 30px;
+  color: #222;
+}
+
+.story-para{
+  padding: 0 40px;
+  color: #222;
+}
+
+
 /* contact section */
 .contact-container {
 	display: grid;
@@ -225,3 +253,25 @@ position: absolute;
 		padding: 100px 0;
 	}
 }
+
+/* countdown timer */
+.timer-container{
+  margin-top: -10px;
+  padding: 15px 0;
+  color: #fff;
+  background-color: #E0BFB8;
+  display: grid;
+  justify-content: center;
+}
+
+.timer-title{
+  font-size: 35px;
+}
+
+.timer-list{
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
