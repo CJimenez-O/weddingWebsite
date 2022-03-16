@@ -13,12 +13,9 @@
       crossorigin="anonymous"
     />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Kalam&family=Poppins:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Kalam&family=Lobster&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <!-- Custom StyleSheet -->
     <link rel="stylesheet" href="styles.css" />
     <meta
@@ -80,10 +77,10 @@
     <div class="timer-container">
       <h2 class="timer-title">DAYS UNTIL WE'RE MARRIED!</h2>
       <ul class="timer-list">
-        <li class="timer-item">249 Days</li>
-        <li class="timer-item">2 Hours</li>
-        <li class="timer-item">31 Minutes</li>
-        <li class="timer-item">41 Seconds</li>
+        <li class="timer-item days"></li>
+        <li class="timer-item hours"></li>
+        <li class="timer-item minutes"></li>
+        <li class="timer-item seconds"></li>
       </ul>
     </div>
 
@@ -131,9 +128,21 @@
       </div>
     </div>
 
+    <div class="gallary-container">
+      <h3 class="gallary-title">Photo Gallary</h3>
+      <ul class="cs-text">
+        <li class="comming">Comming</li>
+        <li class="soon">Soon!</li>
+      </ul>
+    </div>
+
+    <div class="contact">
+      <form action="https://formspree.io/f/xdoyeyee" method="POST" class="contact-form"></form>
+    </div>
+
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <!-- Custom Script -->
-    <script src="./js/index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

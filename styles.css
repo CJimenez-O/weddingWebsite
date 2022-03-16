@@ -100,11 +100,7 @@
   color: white;
 }
 
-.logo {
-    padding-top: 4px;
-    display: inline-block;
-    margin-left: 20px;
-}
+
 
 .navbar-toggle {
     position: absolute;
@@ -274,4 +270,37 @@ position: absolute;
   font-size: 20px;
   padding-left: 10px;
 }
+
+
+/* photo gallary */
+
+.gallary-container{
+  background-color: #E0BFB8;
+  color: #fcfcfc;
+  padding: 30px 0;
+}
+
+.gallary-title{
+  padding: 20px 0px;
+  font-size: 40px;
+  width: 30%;
+  margin: 20px auto;
+  text-align: center;
+  display: grid;
+  border: 5px solid #fcfcfc;
+  border-radius: 10px;
+}
+
+.cs-text{
+  display: grid;
+  font-family: 'lobster';
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 75px;
+}
+
+
+
+
 
