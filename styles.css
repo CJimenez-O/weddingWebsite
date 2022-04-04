@@ -66,116 +66,140 @@ li {
 }
 
 .header {
-	color: white;
-	background-color: #e0bfb8;
+    position: relative;
+    width: 100%;
+    /* min-height: 90vh; */
+    overflow: hidden;
+  }
+
+
+  /* nav bar */
+  .navbar {
+    font-size: 18px;
+    background-color: #e0bfb8;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 5px;
 }
 
-/* nav bar */
-.navbar {
-	font-size: 18px;
-	/* border: 1px solid rgba(0, 0, 0, 0.2); */
-	padding-bottom: 5px;
-	padding-top: 5px;
-}
 
 .main-nav {
-	list-style-type: none;
-	display: none;
+    list-style-type: none;
+    display: none;
 }
 
-.nav-links {
-	text-decoration: none;
-	color: rgba(255, 255, 255, 0.7);
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: #fff;
+	cursor: pointer;
 }
 
 .main-nav li {
-	text-align: center;
-	margin: 15px auto;
-	padding-right: 20px;
+    text-align: center;
+    margin: 15px auto;
+    padding-right: 20px;
 }
 
-.main-nav li a {
-	color: white;
+.main-nav li a{
+  color: white;
 }
+
+.logo {
+    padding-top: 4px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
 
 .navbar-toggle {
-	position: absolute;
-	right: 20px;
-	cursor: pointer;
-	color: rgba(255, 255, 255, 0.8);
-	font-size: 24px;
-	padding-top: 5px;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
 }
 
 .active {
-	display: block;
+    display: block;
 }
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        align-items: center;
+		padding: 5px 20px;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+		
+    }
+
+    .nav-links {
+        margin-left: 40px;
+		cursor: pointer;
+    }
+
+    .logo {
+        margin-top: 0;
+        padding-left: unset !important;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+}
+  
+
 
 /* End of nav bar */
 
+
+
+
 .bannerContainer {
-	position: relative;
+	
+	justify-content: center;
 	text-align: center;
+	align-items: center;
+	background-image: url(/imgs/banner2.JPEG);
+	background-size: cover;
+	background-position: center;
+	height: 800px;
+}
+
+.bannerInfo{
+	position: relative;
+	top: 40%;
 }
 
 .bannerTitle {
-	position: absolute;
-	font-family: "Great Vibes";
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	font-size: 70px;
 	color: white;
 	text-shadow: 0px 0px 10px black;
 }
 
 .bannerText {
-	position: absolute;
-	top: 55%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	font-size: 20px;
 	color: white;
 	text-shadow: 0px 0px 10px black;
 }
 
-@media screen and (min-width: 768px) {
-	.navbar {
-		display: flex;
-		justify-content: space-between;
-		padding: 10px 0px;
-		align-items: center;
-		justify-content: center;
-	}
 
-	.main-nav {
-		display: flex;
-		margin-right: 30px;
-		flex-direction: row;
-		justify-content: flex-end;
-	}
-
-	.main-nav li {
-		margin: 0;
-	}
-
-	.nav-links {
-		margin-left: 40px;
-	}
-
-	.logo {
-		margin-top: 0;
-		padding-left: unset !important;
-	}
-
-	.navbar-toggle {
-		display: none;
-	}
-
-	.nav-links:hover {
-		color: rgba(255, 255, 255, 1);
-	}
-}
 
 /* our story section */
 .story-container {

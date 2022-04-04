@@ -1,3 +1,11 @@
+let mainNav = document.getElementById('js-menu');
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+navBarToggle.addEventListener('click', function () {
+  mainNav.classList.toggle('active');
+});
+
+
 const countdown = () =>{
     const countDate = new Date("November 18, 2022 00:00:00");
     const now = new Date().getTime();
