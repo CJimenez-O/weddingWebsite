@@ -123,10 +123,10 @@ li {
     display: block;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1360px) {
     .navbar {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         padding-bottom: 0;
         align-items: center;
 		padding: 5px 20px;
@@ -152,6 +152,9 @@ li {
     .logo {
         margin-top: 0;
         padding-left: unset !important;
+		font-size: 25px;
+		font-weight: 500;
+		margin: 0 100px;
     }
 
     .navbar-toggle {
@@ -172,7 +175,6 @@ li {
 
 
 .bannerContainer {
-	
 	justify-content: center;
 	text-align: center;
 	align-items: center;
@@ -210,14 +212,21 @@ li {
 }
 
 .couple-photo {
-	margin: 0;
-	padding: 0;
+	height: auto;
+	margin: auto;
+}
+
+.couple{
 }
 
 .icon {
 	font-size: 25px;
 	display: grid;
 	margin: auto 0;
+}
+
+.story-text{
+	max-height: 300px;
 }
 .story-title {
 	display: flex;
@@ -227,14 +236,31 @@ li {
 	color: #e0bfb8;
 	border-bottom: 2px solid #e0bfb8;
 	width: 40%;
-	margin: 10px auto;
-	padding-top: 30px;
+	margin: auto;
 }
 
 .story-para {
 	padding: 60px 40px;
 	color: #222;
 }
+
+
+@media screen and (max-width: 1580px) {
+	.story-container{
+		display: block;
+	}
+	.story-text{
+		max-height: unset;
+	}
+
+	.story-title{
+		width: 30%;
+	}
+
+	
+}
+
+
 
 /* contact section */
 .contact-container {
@@ -393,6 +419,29 @@ label {
 	border: 1px solid #fcfcfc;
 	border-radius: 10px;
 	cursor: pointer;
+}
+
+@media (max-width: 1290px) {
+	.form-title {
+		font-size: 30px;
+		width: 30%;
+	}
+}
+
+@media (max-width: 790px) {
+	.form-title {
+		text-align: center;
+		margin-top: 25px;
+		width: 40%;
+		font-size: 25px;
+	}
+	.contact-form {
+		margin: 30px 10%;
+	}
+	.input-div {
+		display: block;
+		width: 100%;
+	}
 }
 
 /* footer */
