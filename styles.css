@@ -87,6 +87,12 @@ li {
     display: none;
 }
 
+.main-nav2 {
+    list-style-type: none;
+    display: none;
+}
+
+
 .nav-links,
 .logo {
     text-decoration: none;
@@ -94,20 +100,28 @@ li {
 	cursor: pointer;
 }
 
-.main-nav li {
+.nav-list-item{
     text-align: center;
     margin: 15px auto;
     padding-right: 20px;
 }
 
-.main-nav li a{
+.nav-links a{
   color: white;
 }
 
 .logo {
     padding-top: 4px;
+    display: none;
+    margin-left: 20px;
+	color: #fff;
+}
+
+.logo2 {
+    padding-top: 4px;
     display: inline-block;
     margin-left: 20px;
+	color: #fff;
 }
 
 
@@ -139,6 +153,13 @@ li {
         justify-content: flex-end;
     }
 
+	.main-nav2 {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
     .main-nav li {
         margin: 0;
 		
@@ -155,6 +176,18 @@ li {
 		font-size: 25px;
 		font-weight: 500;
 		margin: 0 100px;
+		color: #fff;
+		display: block;
+    }
+
+	.logo2 {
+        margin-top: 0;
+        padding-left: unset !important;
+		font-size: 25px;
+		font-weight: 500;
+		margin: 0 100px;
+		color: #fff;
+		display: none;
     }
 
     .navbar-toggle {
