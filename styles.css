@@ -234,6 +234,12 @@ li {
 	text-shadow: 0px 0px 10px black;
 }
 
+@media (max-width: 890px) {
+	.bannerTitle{
+		font-size: 40px;
+	}
+}
+
 
 
 /* our story section */
@@ -367,6 +373,13 @@ li {
 	padding-left: 10px;
 }
 
+@media (max-width: 890px) {
+	.timer-container{
+		text-align: center;
+	}
+
+}
+
 /* photo gallary */
 
 .gallary-container {
@@ -395,6 +408,19 @@ li {
 	text-align: center;
 	font-size: 75px;
 }
+
+@media (max-width: 890px) {
+
+	.gallary-title {
+		font-size: 30px;
+		width: 60%;
+	}
+	.cs-text{
+		font-size: 40px;
+	}
+}
+
+
 
 /* contact form */
 .contact {
@@ -465,7 +491,7 @@ label {
 	.form-title {
 		text-align: center;
 		margin-top: 25px;
-		width: 40%;
+		width: 50%;
 		font-size: 25px;
 	}
 	.contact-form {
