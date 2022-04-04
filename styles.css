@@ -300,6 +300,13 @@ li {
 }
 
 
+@media screen and (max-width: 860px) {
+	.story-title{
+	width: 60%;
+	}
+}
+
+
 
 /* contact section */
 .contact-container {
