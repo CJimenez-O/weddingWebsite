@@ -24,7 +24,7 @@ html {
 }
 
 body {
-	font-family: "Poppins", sans-serif;
+	font-family: "Cormorant Garamond", sans-serif;
 	font-size: 1.6rem;
 	font-weight: 400;
 	background-color: rgba(247, 247, 247, 0.63);
@@ -208,13 +208,19 @@ li {
 
 .bannerInfo {
 	position: relative;
-	top: 40%;
+	top: 45%;
 }
 
 .bannerTitle {
 	font-size: 70px;
+	font-weight: bold;
+	letter-spacing: 2px;
 	color: white;
 	text-shadow: 0px 0px 10px black;
+}
+
+.engaged {
+	padding-left: 20px;
 }
 
 .bannerText {
@@ -266,6 +272,7 @@ li {
 .story-para {
 	padding: 60px 40px;
 	color: #222;
+	font-size: 20px;
 	text-align: center;
 }
 
@@ -352,13 +359,13 @@ li {
 
 .timer-title {
 	font-size: 30px;
-	padding-left: 5px;
 }
 
 .timer-list {
 	display: flex;
 	gap: 20px;
 	font-size: 20px;
+	padding-left: 15px;
 }
 
 @media (max-width: 890px) {
