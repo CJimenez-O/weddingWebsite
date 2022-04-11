@@ -202,7 +202,7 @@ li {
 	align-items: center;
 	background-image: url(/imgs/banner2.JPEG);
 	background-size: cover;
-	background-position: 70%;
+	background-position: 65%;
 	height: 650px;
 }
 
@@ -260,11 +260,13 @@ li {
 	border-bottom: 2px solid #e0bfb8;
 	width: 40%;
 	margin: auto;
+	padding-top: 30px;
 }
 
 .story-para {
 	padding: 60px 40px;
 	color: #222;
+	text-align: center;
 }
 
 @media screen and (max-width: 1580px) {
@@ -305,6 +307,7 @@ li {
 	background-color: #fcfcfc;
 	padding: 40px 30px;
 	border-radius: 15px;
+	margin: 0 25px;
 }
 
 .contact-title {
@@ -361,6 +364,9 @@ li {
 @media (max-width: 890px) {
 	.timer-container {
 		text-align: center;
+	}
+	.timer-title {
+		font-size: 25px;
 	}
 }
 
