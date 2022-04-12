@@ -360,7 +360,7 @@ li {
 }
 
 .guest-input{
-	background-color: rgba(247, 247, 247, 0.918);
+	background: transparent;
 	border: none;
 	border-bottom: 1px solid black;
 	text-align: center;
@@ -382,7 +382,7 @@ li {
 }
 
 .name-input{
-	background-color: rgba(247, 247, 247, 0.918);
+	background: transparent;
 	border: none;
 	border-bottom: 1px solid black;
 	text-align: center;
@@ -414,6 +414,9 @@ li {
 	}
 	.rsvp{
 		width: 70%;
+	}
+	.name-input{
+		width: 35%;
 	}
 }
 
