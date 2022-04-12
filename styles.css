@@ -368,6 +368,7 @@ li {
 	font-family: "Cormorant Garamond", sans-serif;
 	font-size: 18px;
 	margin-top: -5px;
+	border-radius: 0px;
 }
 
 .guest-input[type=text]:focus{
