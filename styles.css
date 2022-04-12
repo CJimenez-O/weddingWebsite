@@ -390,6 +390,7 @@ li {
 	font-family: "Cormorant Garamond", sans-serif;
 	font-size: 18px;
 	margin-top: -5px;
+	border-radius: 0px;
 }
 
 .name-input[type=text]:focus{
@@ -416,7 +417,7 @@ li {
 		width: 70%;
 	}
 	.name-input{
-		width: 35%;
+		width: 55%;
 	}
 }
 
