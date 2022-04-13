@@ -401,6 +401,15 @@ li {
 	outline: none;
 }
 
+.rsvp-button{
+	cursor: pointer;
+	margin-top: 10px;
+	padding: 3px 6px;
+	border-radius: 5px;
+	border: 1px solid white;
+	background-color: #e0bfb8;
+}
+
 
 @media (max-width: 850px) {
 	.rsvp-container-title{
