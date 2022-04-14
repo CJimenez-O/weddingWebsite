@@ -10,6 +10,8 @@
       integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
       crossorigin="anonymous"
     ></script>
+    <!-- animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -106,8 +108,8 @@
     </div>
 
     <div class="timer-container">
-      <h2 class="timer-title">DAYS UNTIL WE'RE MARRIED!</h2>
-      <ul class="timer-list">
+      <h2 class="timer-title" data-aos="fade-right">DAYS UNTIL WE'RE MARRIED!</h2>
+      <ul class="timer-list" data-aos="fade-left">
         <li class="timer-item days"></li>
         <li class="timer-item hours"></li>
         <li class="timer-item minutes"></li>
@@ -118,7 +120,7 @@
     <div class="story-container" id="story">
       <div class="story-text">
         <h3 class="story-title"><i class="fas fa-heart icon"></i> Our Story</h3>
-        <p class="story-para">
+        <p class="story-para" data-aos="fade-right">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
           pariatur, facilis delectus tenetur dignissimos recusandae! Vitae sequi
           fuga rerum tenetur libero rem iusto quam porro eius sunt! Facere saepe
@@ -134,24 +136,29 @@
         </p>
       </div>
       <div class="couple-photo">
-        <img class="couple" src="./imgs/Purpose.png" />
+        <img class="couple" data-aos="fade-left" src="./imgs/Purpose.png" />
       </div>
     </div>
 
     <!-- RSVP -->
     <div class="rsvp-container" id="rsvp">
-      <h2 class="rsvp-container-title">Don't Forget to RSVP!</h2>
-      <div class="rsvp">
+      <h2 class="rsvp-container-title" data-aos="fade-right" data-aos-duration="500">Don't Forget to RSVP!</h2>
+      <div class="rsvp" data-aos="fade-left" data-aos-duration="600">
         <h3 class="rsvp-title">Kindly Respond</h3>
         <p class="rsvp-date">By November 18, 2022</p>
 
-        <div class="checkbox-list">
+        <div class="checkbox-list" >
           <div class="checkbox-item">
             <input type="checkbox" class="checkbox-element going" />
             <p class="checkbox-title">Can't wait!</p>
           </div>
           <div class="checkbox-item">
-            <input type="checkbox" class="checkbox-element not-going" name="" id="" />
+            <input
+              type="checkbox"
+              class="checkbox-element not-going"
+              name=""
+              id=""
+            />
             <p class="checkbox-title">There in spirit</p>
           </div>
         </div>
@@ -174,10 +181,10 @@
     <div class="contact-container" id="loc">
       <div class="company">
         <div class="contact-info">
-          <h3 class="contact-title">Location</h3>
-          <p class="address">Diamond Bar, California</p>
-          <p class="address">1600 Grand Ave, Diamond Bar, CA 91765</p>
-          <p class="phone">Friday, November 18 2022</p>
+          <h3 class="contact-title" data-aos="fade-right" data-aos-duration="500">Location</h3>
+          <p class="address" data-aos="fade-right" data-aos-duration="600">Diamond Bar, California</p>
+          <p class="address" data-aos="fade-right" data-aos-duration="700">1600 Grand Ave, Diamond Bar, CA 91765</p>
+          <p class="phone" data-aos="fade-right" data-aos-duration="800">Friday, November 18 2022</p>
         </div>
       </div>
       <div class="maps">
@@ -196,7 +203,7 @@
     <div class="gallary-container" id="photo">
       <h3 class="gallary-title">Photo Gallary</h3>
       <ul class="cs-text">
-        <li class="comming">Comming Soon!</li>
+        <li class="comming" data-aos="fade-up" data-aos-duration="500">Comming Soon!</li>
       </ul>
     </div>
 
@@ -239,5 +246,10 @@
 
     <!-- Custom Script -->
     <script src="index.js"></script>
+    <!-- Animations -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

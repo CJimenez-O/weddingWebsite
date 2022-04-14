@@ -299,6 +299,9 @@ li {
 .rsvp-container{
 	background-color:#e0bfb8;
 	padding: 50px 0;
+	position: relative;
+	z-index: 1;
+	margin-top: -10px;
 }
 
 .rsvp-container-title{
