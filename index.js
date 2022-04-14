@@ -34,6 +34,7 @@ const user = document.querySelector(".name-input");
 const guest = document.querySelector(".guest-input");
 const rsvpButton = document.querySelector(".rsvp-button");
 const going = document.querySelector(".going");
+const notGoing = document.querySelector('.not-going');
 
 // if the ticker bought already exist dont add it to the DB esle add and display info to DB and front end
 
@@ -65,6 +66,40 @@ rsvpButton.addEventListener("click", (e) => {
         } else {
           console.log("i dont exist");
           database.ref(`list/` + username).set({
+            Name: username,
+            Guests: total,
+          });
+
+          location.reload();
+          return;
+        }
+      });
+  } else {
+    console.log("Please enter a valid input");
+  }
+
+  if (user.value != "" && guest.value != "" && notGoing.checked) {
+    database
+      .ref(`NoGolist`)
+      .orderByChild("names")
+      .equalTo(`${username}`)
+      .once("value", (snapshot) => {
+        console.log("scanning database");
+        if (snapshot.exists()) {
+          var data1 = snapshot.val();
+          let currentGuests = parseFloat(data1[`${username}`].Guests);
+
+          database.ref(`NoGolist/` + username).set({
+            Name: username,
+            Guests: currentGuests,
+          });
+
+          console.log("i exist");
+          location.reload();
+          return;
+        } else {
+          console.log("i dont exist");
+          database.ref(`NoGolist/` + username).set({
             Name: username,
             Guests: total,
           });

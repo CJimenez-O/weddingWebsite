@@ -254,9 +254,7 @@ li {
 	margin: auto 0;
 }
 
-.story-text {
-	max-height: 300px;
-}
+
 .story-title {
 	display: flex;
 	gap: 10px;
@@ -403,11 +401,12 @@ li {
 
 .rsvp-button{
 	cursor: pointer;
-	margin-top: 10px;
+	margin-top: 15px;
 	padding: 3px 6px;
 	border-radius: 5px;
 	border: 1px solid white;
 	background-color: #e0bfb8;
+	color: white;
 }
 
 
@@ -423,8 +422,8 @@ li {
 
 @media (max-width: 650px) {
 	.rsvp-container-title{
-		width: 60%;
-		font-size: 30px;
+		width: 65%;
+		font-size: 28px;
 	}
 	.rsvp{
 		width: 80%;
