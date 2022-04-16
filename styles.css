@@ -117,6 +117,7 @@ li {
 	padding-top: 4px;
 	display: inline-block;
 	margin-left: 20px;
+	font-size: 22px;
 	color: #fff;
 }
 
@@ -177,7 +178,7 @@ li {
 	.logo2 {
 		margin-top: 0;
 		padding-left: unset !important;
-		font-size: 25px;
+		font-size: 28px;
 		font-weight: 500;
 		margin: 0 100px;
 		color: #fff;
@@ -343,7 +344,7 @@ li {
 }
 
 .checkbox-element{
-	margin-top: 6px;
+	margin-top: 5px;
 	cursor: pointer;
 }
 
