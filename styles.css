@@ -606,7 +606,7 @@ li {
   flex-direction: column;
 }
 .hr-line {
-  width: 60%;
+  width: 70%;
   margin: auto;
 }
 /* Style the buttons that are used to open and close the faq-page body */
@@ -615,7 +615,7 @@ li {
   color: #444;
   cursor: pointer;
   padding: 30px 20px;
-  width: 60%;
+  width: 70%;
   border: none;
   outline: none;
   transition: 0.4s;
@@ -628,7 +628,7 @@ li {
 
 }
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
+.activeFAQ,
 .faq-page:hover {
   background-color: #f9f9f9;
 }
@@ -653,10 +653,7 @@ li {
   float: right;
   margin-left: 5px;
 }
-.active:after {
-  content: "\2796";
-  /* Unicode character for "minus" sign (-) */
-}
+
 
 /* contact form */
 .contact {
