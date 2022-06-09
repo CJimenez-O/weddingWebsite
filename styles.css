@@ -691,7 +691,9 @@ li {
 
 .hotel{
   color: blue;
+  text-decoration: underline;
 }
+
 
 .faq-page:after {
   content: "\02795";
