@@ -13,6 +13,7 @@ window.onload = (e) => {
   setTimeout(() => {
     body = document.getElementsByTagName("body")[0];
     body.style.overflow = "hidden";
+	body.style.scroll = "no";
     let popup = document.querySelector(".disclaimer");
     popup.innerHTML = `
 		<div class="disclaimerContainer">
@@ -31,6 +32,7 @@ window.onload = (e) => {
       console.log("click");
       body = document.getElementsByTagName("body")[0];
       body.style.overflow = "unset";
+	  body.style.scroll = "yes";
       let popup = document.querySelector(".disclaimer");
       popup.innerHTML = "";
     });
