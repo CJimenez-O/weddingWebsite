@@ -58,6 +58,8 @@
   </head>
 
   <body>
+    <div class="disclaimer">
+     </div>
     <!-- Header -->
     <header id="home" class="header">
       <!-- Navbar -->
@@ -99,6 +101,8 @@
         </ul>
       </nav>
     </header>
+
+    
 
     <div class="bannerContainer">
       <div class="bannerInfo">
@@ -169,19 +173,21 @@
           </div>
         </div>
 
+        <p class="valid"></p>
+
         <div class="amount-of-guests">
           <p class="input-title">Party of:</p>
-          <input class="guest-input" type="text" />
+          <input class="guest-input" type="text" required/>
         </div>
 
         <div class="name-section">
           <p class="input-title">First Name:</p>
-          <input class="name-input" type="text" />
+          <input class="name-input" type="text" required/>
         </div>
 
         <div class="name-section">
           <p class="input-title">Last Name:</p>
-          <input class="lastname-input" type="text" />
+          <input class="lastname-input" type="text" required/>
         </div>
         <button class="rsvp-button">Submit</button>
       </div>

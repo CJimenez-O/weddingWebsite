@@ -33,6 +33,7 @@ body {
   z-index: 1;
 }
 
+
 h1,
 h2,
 h3,
@@ -246,6 +247,45 @@ li {
   }
 }
 
+/* disclaimer  */
+.disclaimer{
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9;
+  height: 120vh;
+  position: fixed;
+  display: grid;
+  place-content: center;
+}
+
+.disclaimerContainer{
+  background-color: rgb(230, 230, 230);
+  border-radius: 10px;
+  margin: auto 25%;
+  text-align: center;
+  color: #222;
+  font-size: 18px;
+}
+.closeButton{
+  float: right;
+  margin-top: 10px;
+  margin-right: 20px;
+  padding: 2px 5px;
+  cursor: pointer;
+}
+.read{
+  margin: 10px 0;
+}
+.cardText{
+  padding: 40px 60px; 
+}
+
+@media screen and (max-width: 780px) {
+  .disclaimerContainer{
+    margin: auto 5%;
+  }
+
+}
+
 /* our story section */
 .story-container {
   display: grid;
@@ -339,6 +379,11 @@ li {
   border-radius: 5px;
   color: #222;
   font-size: 20px;
+}
+
+
+.valid{
+  color: red;
 }
 
 .rsvp-title {
