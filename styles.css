@@ -899,7 +899,6 @@ label {
   top: 470px;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
 
 }
 
@@ -923,7 +922,7 @@ label {
   .weddingPartyList{
     grid-template-columns: 1fr;
     top: 620px;
-    z-index: 1;
+    z-index: 0;
     gap: 25px;
   }
 
@@ -945,7 +944,6 @@ label {
   .weddingPartyList{
     grid-template-columns: 1fr;
     top: 620px;
-    z-index: 1;
     gap: 25px;
   }
 
