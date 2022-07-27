@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
+    <!-- animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Cormorant+Garamond:wght@300;400;600&family=Permanent+Marker&family=Shadows+Into+Light&family=Comfortaa:wght@500&family=Great+Vibes&family=Kalam&family=Lobster&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyAZwW9DhrVFRJBpnITQrVqxh0VfDalWp-Q",
+        authDomain: "xpress-1a7a4.firebaseapp.com",
+        databaseURL: "https://xpress-1a7a4-default-rtdb.firebaseio.com",
+        projectId: "xpress-1a7a4",
+        storageBucket: "xpress-1a7a4.appspot.com",
+        messagingSenderId: "5199394344",
+        appId: "1:5199394344:web:b32d0fd3cdf89d9f1be71d",
+        measurementId: "G-X5RWXTTEFX",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="/styles.css" />
+    <meta
+      name="Description"
+      content="website for personal electronic repair and purchase of electronics"
+    />
+    <meta name="author" content="Chris Jimenez" />
+    <title>Chris & Monique</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      class="icon"
+      href="/imgs/heart.png"
+    />
+  </head>
+
+  <body>
+    <div class="disclaimer"></div>
+    <!-- Header -->
+    <header id="home" class="header">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </span>
+
+        <a href="/index.html" aria-label="Chris&Monique" class="logo2">
+          Christopher & Monique
+        </a>
+
+        <ul class="main-nav" id="js-menu">
+          <li class="nav-list-item">
+            <a class="nav-links" href="/index.html#story">Our Story</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="nav-links" href="/pages/weddingParty.html"
+              >Wedding Party</a
+            >
+          </li>
+          <li class="nav-list-item">
+            <a class="nav-links" href="/index.html#rsvp">RSVP</a>
+          </li>
+        </ul>
+
+        <a href="/index.html" aria-label="Chris&Monique" class="logo">
+          Christopher & Monique
+        </a>
+
+        <ul class="main-nav2" id="js-menu">
+          <li class="nav-list-item">
+            <a class="nav-links" href="/index.html#loc">Location</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="nav-links" href="/index.html#photo">Photos</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="nav-links" href="/index.html#contactPage">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="weddingContainer">
+      <div class="listContainer">
+        <h2 class="weddingPartyTitle">Wedding Party</h2>
+        
+        <div class="weddingPartyList">
+            <img class="partyImage"  src="/imgs/weddingList.png" alt="">
+            <img class="partyImage right"  src="/imgs/groomsmen.jpeg" alt="">
+          </div>
+      </div>
+
+      <div class="flowers">
+        <img class="listImage" src="/imgs/flowers.png" alt="" />
+      </div>
+
+      <div class="flowers rightSet">
+        <img class="listImage" src="/imgs/flowers.png" alt="" />
+      </div>
+
+    </div>
+
+    <footer class="footer-info">
+      <p class="when">11 • 18 • 2022</p>
+      <p class="where">Diamond Bar, California</p>
+      <p class="legal">© Chris & Monique Jimenez 2022</p>
+    </footer>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+    <!-- Custom Script -->
+    <script src="index.js"></script>
+    <!-- Animations -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

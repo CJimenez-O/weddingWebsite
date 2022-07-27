@@ -27,7 +27,8 @@ body {
   font-family: "Cormorant Garamond", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
-  background-color: rgba(247, 247, 247, 0.63);
+  background-color: #fff;
+  
   color: #243a6f;
   position: relative;
   z-index: 1;
@@ -774,7 +775,7 @@ li {
   display: grid;
   max-width: 600px;
   height: 100%;
-  margin: auto;
+  margin: 30px auto;
   background-color: #e0bfb8;
   padding: 40px 30px;
   border-radius: 10px;
@@ -843,7 +844,119 @@ label {
   justify-content: center;
   text-align: center;
   padding: 20px 0;
-  margin-top: 80px;
   background-color: #e0bfb8;
   color: #fcfcfc;
+  position: relative;
+  z-index: 1;
 }
+
+
+
+/* wedding party page*/
+
+.weddingContainer{
+  height: 800px;
+  overflow: hidden;
+}
+
+.listContainer{
+  display: grid;
+  justify-content: center;
+  place-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.listImage{
+  height: 30vh;
+}
+
+.rightSet{
+  position: absolute;
+  bottom: 12.5vh;
+  right: 0px;
+  transform: rotate(180deg);
+}
+
+.weddingPartyTitle{
+  color: black;
+  text-align: center;
+  font-size: 45px;
+  margin: 50px 0;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.weddingPartyList{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  position: absolute;
+  top: 470px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+
+}
+
+.partyImage{
+  height: 550px;
+  min-width: 350px;
+}
+
+.right{
+  height: 680px;
+}
+
+
+@media (max-width: 1000px) {
+  .weddingPartyTitle{
+    top: 120px;
+  }
+  .weddingContainer{    
+    height: 1100px;
+  }
+  .weddingPartyList{
+    grid-template-columns: 1fr;
+    top: 620px;
+    z-index: 1;
+    gap: 25px;
+  }
+
+  .partyImage{
+    height: 400px;
+    min-width: 300px;
+
+  }  
+}
+
+
+@media (max-width: 800px) {
+  .weddingPartyTitle{
+    top: 140px;
+  }
+  .weddingContainer{    
+    height: 1100px;
+  }
+  .weddingPartyList{
+    grid-template-columns: 1fr;
+    top: 620px;
+    z-index: 1;
+    gap: 25px;
+  }
+
+  .partyImage{
+    height: 350px;
+    min-width: 250px;
+
+  }  
+} 
+
+
+
+
+
+
