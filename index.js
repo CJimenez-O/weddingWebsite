@@ -13,7 +13,7 @@ window.onload = (e) => {
   setTimeout(() => {
     body = document.getElementsByTagName("body")[0];
     body.style.overflow = "hidden";
-	body.style.scroll = "no";
+    body.style.scroll = "no";
     let popup = document.querySelector(".disclaimer");
     popup.innerHTML = `
 		<div class="disclaimerContainer">
@@ -32,7 +32,7 @@ window.onload = (e) => {
       console.log("click");
       body = document.getElementsByTagName("body")[0];
       body.style.overflow = "unset";
-	  body.style.scroll = "yes";
+      body.style.scroll = "yes";
       let popup = document.querySelector(".disclaimer");
       popup.innerHTML = "";
     });
@@ -68,7 +68,7 @@ const guest = document.querySelector(".guest-input");
 const rsvpButton = document.querySelector(".rsvp-button");
 const going = document.querySelector(".going");
 const notGoing = document.querySelector(".not-going");
-const rsvpCount = document.querySelector('.rsvp-guest-input')
+const rsvpCount = document.querySelector(".rsvp-guest-input");
 
 rsvpButton.addEventListener("click", (e) => {
   let total = guest.value;
@@ -79,8 +79,12 @@ rsvpButton.addEventListener("click", (e) => {
   var database = firebase.database();
 
   // add user to going list
-  if (user.value !== "" && guest.value !== "" && going.value == 'on' && guest.value <= rsvpCount.value ) {
-
+  if (
+    user.value !== "" &&
+    guest.value !== "" &&
+    going.value == "on" &&
+    guest.value <= rsvpCount.value
+  ) {
     database
       .ref(`list`)
       .orderByChild("names")
@@ -94,7 +98,7 @@ rsvpButton.addEventListener("click", (e) => {
           database.ref(`list/` + fullname).set({
             Name: fullname,
             Guests: currentGuests,
-            Phone: phoneNumber
+            Phone: phoneNumber,
           });
 
           // console.log("i exist");
@@ -105,24 +109,30 @@ rsvpButton.addEventListener("click", (e) => {
           database.ref(`list/` + fullname).set({
             Name: fullname,
             Guests: total,
-            Phone: phoneNumber
+            Phone: phoneNumber,
           });
 
-          // location.reload();
+          let validText = document.querySelector(".valid");
+          validText.innerText = "RSVP Submitted! See you there!";
+          setTimeout(() => {
+            validText.innerText = "";
+            location.reload();
+          }, 2000);
+
           return;
         }
       });
-  } else if(user.value == "" && guest.value == ""){
+  } else if (user.value == "" && guest.value == "") {
     let validText = document.querySelector(".valid");
     validText.innerText = "Please enter a valid input";
-    console.log('unvalid input')
+    console.log("unvalid input");
     setTimeout(() => {
       validText.innerText = "";
     }, 3000);
-  } else if(guest.value > rsvpCount.value){
+  } else if (guest.value > rsvpCount.value) {
     let validText = document.querySelector(".valid");
     validText.innerText = `The max number of guests reserved is ${rsvpCount.value}`;
-    console.log('unvalid input')
+    console.log("unvalid input");
     setTimeout(() => {
       validText.innerText = "";
     }, 3000);
@@ -144,7 +154,7 @@ rsvpButton.addEventListener("click", (e) => {
           database.ref(`NoGolist/` + fullname).set({
             Name: fullname,
             Guests: currentGuests,
-            Phone: phoneNumber
+            Phone: phoneNumber,
           });
 
           // console.log("i exist");
@@ -155,17 +165,17 @@ rsvpButton.addEventListener("click", (e) => {
           database.ref(`NoGolist/` + fullname).set({
             Name: fullname,
             Guests: total,
-            Phone: phoneNumber
+            Phone: phoneNumber,
           });
 
           location.reload();
           return;
         }
       });
-  } else if(user.value == "" && guest.value == "" ) {
+  } else if (user.value == "" && guest.value == "") {
     let validText = document.querySelector(".valid");
     validText.innerText = "Please enter a valid input";
-    console.log('unvalid input')
+    console.log("unvalid input");
 
     setTimeout(() => {
       validText.innerText = "";
