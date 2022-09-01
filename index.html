@@ -155,12 +155,16 @@
       </h2>
       <div class="rsvp">
         <h3 class="rsvp-title">Kindly Respond</h3>
-        <p class="rsvp-date">By October 1, 2022</p>
+        <p class="rsvp-date">By the third of October</p>
 
         <div class="checkbox-list">
+          <div class="attend">
+            <p class="attend-title">Can you make it: </p>
+
+          </div>
           <div class="checkbox-item">
             <input type="checkbox" class="checkbox-element going" />
-            <p class="checkbox-title">Can't wait!</p>
+            <p class="checkbox-title">Yes</p>
           </div>
           <div class="checkbox-item">
             <input
@@ -169,24 +173,29 @@
               name=""
               id=""
             />
-            <p class="checkbox-title">There in spirit</p>
+            <p class="checkbox-title">No</p>
           </div>
         </div>
 
         <p class="valid"></p>
 
-        <div class="amount-of-guests">
-          <p class="input-title">Party of:</p>
+        <div class="name-section">
+          <p class="input-title">People In RSVP:</p>
+          <input class="rsvp-guest-input" type="text" required/>
+        </div>
+
+        <div class="amount-of-guests name-section">
+          <p class="input-title">People Attending:</p>
           <input class="guest-input" type="text" required/>
         </div>
 
         <div class="name-section">
-          <p class="input-title">First Name:</p>
+          <p class="input-title">Full Name:</p>
           <input class="name-input" type="text" required/>
         </div>
 
         <div class="name-section">
-          <p class="input-title">Last Name:</p>
+          <p class="input-title">Phone Number:</p>
           <input class="lastname-input" type="text" required/>
         </div>
         <button class="rsvp-button">Submit</button>

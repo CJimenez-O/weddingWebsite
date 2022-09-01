@@ -399,12 +399,24 @@ li {
   font-family: "Ms Madi";
 }
 
+.attend-title{
+  margin: 15px 0px 5px 0;
+}
+
 .checkbox-list {
   display: flex;
   justify-content: center;
   padding: 10px 0;
   gap: 20px;
 }
+
+.checkbox-title{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+
 
 .checkbox-item {
   display: flex;
@@ -419,6 +431,10 @@ li {
 .checkbox-element[type="checkbox"]:checked {
   background: #222;
   color: #222;
+}
+
+.input-title{
+  min-width: 100%;
 }
 
 .test {
@@ -436,7 +452,7 @@ li {
   border: none;
   border-bottom: 1px solid black;
   text-align: center;
-  width: 10%;
+  width: 80%;
   font-family: "Cormorant Garamond", sans-serif;
   font-size: 18px;
   margin-top: -5px;
@@ -447,11 +463,29 @@ li {
   outline: none;
 }
 
+.rsvp-guest-input{
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  text-align: center;
+  width: 80%;
+  font-family: "Cormorant Garamond", sans-serif;
+  font-size: 18px;
+  margin-top: -5px;
+  border-radius: 0px;
+}
+
+.rsvp-guest-input[type="text"]:focus {
+  outline: none;
+}
+
 .name-section {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
   justify-content: center;
   padding-top: 10px;
+  width: 100%;
 }
 
 .lastname-input {
@@ -459,7 +493,7 @@ li {
   border: none;
   border-bottom: 1px solid black;
   text-align: center;
-  width: 20%;
+  width: 80%;
   font-family: "Cormorant Garamond", sans-serif;
   font-size: 18px;
   margin-top: -5px;
@@ -471,7 +505,7 @@ li {
   border: none;
   border-bottom: 1px solid black;
   text-align: center;
-  width: 20%;
+  width: 80%;
   font-family: "Cormorant Garamond", sans-serif;
   font-size: 18px;
   margin-top: -5px;
@@ -515,13 +549,7 @@ li {
   .rsvp {
     width: 80%;
   }
-  .name-input {
-    width: 55%;
-  }
-
-  .lastname-input {
-    width: 55%;
-  }
+ 
 }
 
 /* contact section */

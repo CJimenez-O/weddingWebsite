@@ -68,23 +68,25 @@ const guest = document.querySelector(".guest-input");
 const rsvpButton = document.querySelector(".rsvp-button");
 const going = document.querySelector(".going");
 const notGoing = document.querySelector(".not-going");
+const rsvpCount = document.querySelector('.rsvp-guest-input')
 
 rsvpButton.addEventListener("click", (e) => {
   let total = guest.value;
   let username = user.value;
-  let lastname = last.value;
-  let fullname = `${username} ${lastname}`;
+  let phoneNumber = last.value;
+  let fullname = `${username} `;
   e.preventDefault();
   var database = firebase.database();
 
   // add user to going list
-  if (user.value != "" && guest.value != "" && going.checked) {
+  if (user.value !== "" && guest.value !== "" && going.value == 'on' && guest.value <= rsvpCount.value ) {
+
     database
       .ref(`list`)
       .orderByChild("names")
       .equalTo(`${fullname}`)
       .once("value", (snapshot) => {
-        console.log("scanning database");
+        // console.log("scanning database");
         if (snapshot.exists()) {
           var data1 = snapshot.val();
           let currentGuests = parseFloat(data1[`${fullname}`].Guests);
@@ -92,28 +94,39 @@ rsvpButton.addEventListener("click", (e) => {
           database.ref(`list/` + fullname).set({
             Name: fullname,
             Guests: currentGuests,
+            Phone: phoneNumber
           });
 
-          console.log("i exist");
+          // console.log("i exist");
           location.reload();
           return;
         } else {
-          console.log("i dont exist");
+          // console.log("i dont exist");
           database.ref(`list/` + fullname).set({
             Name: fullname,
             Guests: total,
+            Phone: phoneNumber
           });
 
-          location.reload();
+          // location.reload();
           return;
         }
       });
-  } else {
+  } else if(user.value == "" && guest.value == ""){
     let validText = document.querySelector(".valid");
     validText.innerText = "Please enter a valid input";
+    console.log('unvalid input')
     setTimeout(() => {
       validText.innerText = "";
     }, 3000);
+  } else if(guest.value > rsvpCount.value){
+    let validText = document.querySelector(".valid");
+    validText.innerText = `The max number of guests reserved is ${rsvpCount.value}`;
+    console.log('unvalid input')
+    setTimeout(() => {
+      validText.innerText = "";
+    }, 3000);
+    return;
   }
 
   // add user to not going list
@@ -131,25 +144,29 @@ rsvpButton.addEventListener("click", (e) => {
           database.ref(`NoGolist/` + fullname).set({
             Name: fullname,
             Guests: currentGuests,
+            Phone: phoneNumber
           });
 
-          console.log("i exist");
+          // console.log("i exist");
           location.reload();
           return;
         } else {
-          console.log("i dont exist");
+          // console.log("i dont exist");
           database.ref(`NoGolist/` + fullname).set({
             Name: fullname,
             Guests: total,
+            Phone: phoneNumber
           });
 
           location.reload();
           return;
         }
       });
-  } else {
+  } else if(user.value == "" && guest.value == "" ) {
     let validText = document.querySelector(".valid");
     validText.innerText = "Please enter a valid input";
+    console.log('unvalid input')
+
     setTimeout(() => {
       validText.innerText = "";
     }, 3000);
