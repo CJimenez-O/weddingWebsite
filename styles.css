@@ -391,7 +391,8 @@ li {
 
 
 .valid{
-  color: red;
+  color: #e08c7b;
+
 }
 
 .rsvp-title {
@@ -420,20 +421,20 @@ li {
 .checkbox-item {
   display: flex;
   gap: 5px;
+  justify-content: center;
 }
 
 .checkbox-element {
-  margin-top: 5px;
   cursor: pointer;
 }
 
-.checkbox-element[type="checkbox"]:checked {
+.checkbox-element:checked:before {
   background: #222;
   color: #222;
 }
 
 .input-title{
-  min-width: 100%;
+  text-align: left;
 }
 
 .test {
@@ -451,7 +452,7 @@ li {
   border: none;
   border-bottom: 1px solid black;
   text-align: center;
-  width: 80%;
+  width: 50%;
   font-family: "Cormorant Garamond", sans-serif;
   font-size: 18px;
   margin-top: -5px;
@@ -462,15 +463,31 @@ li {
   outline: none;
 }
 
+.rsvp-section{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding-top: 10px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.rsvp-date{
+  font-size: 20px;
+}
+
+.rsvp-input-title{
+  font-size: 19px;
+}
+
 .rsvp-guest-input{
   background: transparent;
   border: none;
   border-bottom: 1px solid black;
   text-align: center;
-  width: 80%;
+  width: 40px;
   font-family: "Cormorant Garamond", sans-serif;
   font-size: 18px;
-  margin-top: -5px;
   border-radius: 0px;
 }
 
@@ -479,12 +496,11 @@ li {
 }
 
 .name-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 10px;
   justify-content: center;
-  padding-top: 10px;
+  padding: 5px 20px;
   width: 100%;
+  
 }
 
 .lastname-input {
@@ -492,7 +508,7 @@ li {
   border: none;
   border-bottom: 1px solid black;
   text-align: center;
-  width: 80%;
+  width: 50%;
   font-family: "Cormorant Garamond", sans-serif;
   font-size: 18px;
   margin-top: -5px;
@@ -504,14 +520,14 @@ li {
   border: none;
   border-bottom: 1px solid black;
   text-align: center;
-  width: 80%;
+  width: 50%;
   font-family: "Cormorant Garamond", sans-serif;
   font-size: 18px;
   margin-top: -5px;
   border-radius: 0px;
 }
 
-.name-input[type="text"]:focus {
+input:focus {
   outline: none;
 }
 
@@ -530,6 +546,46 @@ li {
   color: white;
 }
 
+.food-title{
+  margin: 15px 0 5px 0;
+}
+
+.beef-input{
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  text-align: center;
+  width: 50%;
+  font-family: "Cormorant Garamond", sans-serif;
+  font-size: 18px;
+  margin-top: 15px;
+  border-radius: 0px;
+}
+
+.chicken-input{
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  text-align: center;
+  width: 50%;
+  font-family: "Cormorant Garamond", sans-serif;
+  font-size: 18px;
+  margin-top: 15px;
+  border-radius: 0px;
+}
+
+.kid-input{
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  text-align: center;
+  width: 50%;
+  font-family: "Cormorant Garamond", sans-serif;
+  font-size: 18px;
+  margin-top: 15px;
+  border-radius: 0px;
+}
+
 @media (max-width: 850px) {
   .rsvp-container-title {
     width: 50%;
@@ -546,7 +602,10 @@ li {
     font-size: 28px;
   }
   .rsvp {
-    width: 80%;
+    width: 90%;
+  }
+  .checkbox-title{
+    font-size: 16px;
   }
  
 }

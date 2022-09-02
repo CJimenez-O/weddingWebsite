@@ -106,7 +106,7 @@
 
     <div class="bannerContainer">
       <div class="bannerInfo">
-        <h3 class="bannerTitle">WE'RE <span class="engaged">ENGAGED!</span></h3>
+        <h3 class="bannerTitle">Happily Ever After</h3>
         <p class="bannerText">Tying the knot November 18, 2022</p>
       </div>
     </div>
@@ -153,18 +153,22 @@
       >
         Don't Forget to RSVP!
       </h2>
+
       <div class="rsvp">
         <h3 class="rsvp-title">Kindly Respond</h3>
         <p class="rsvp-date">By the third of October</p>
 
-        <div class="checkbox-list">
-          <div class="attend">
-            <p class="attend-title">Can you make it: </p>
+        <div class="rsvp-section">
+          <input class="rsvp-guest-input" type="text" required/>
+          <p class="rsvp-input-title">Reserved in your honor</p>
+        </div>
 
-          </div>
+        <p class="valid"></p>
+
+        <div class="checkbox-list">
           <div class="checkbox-item">
             <input type="checkbox" class="checkbox-element going" />
-            <p class="checkbox-title">Yes</p>
+            <p class="checkbox-title">Accepts with pleasure</p>
           </div>
           <div class="checkbox-item">
             <input
@@ -173,31 +177,41 @@
               name=""
               id=""
             />
-            <p class="checkbox-title">No</p>
+            <p class="checkbox-title">Regretfully declines</p>
           </div>
         </div>
-
-        <p class="valid"></p>
-
+        
         <div class="name-section">
-          <p class="input-title">People In RSVP:</p>
-          <input class="rsvp-guest-input" type="text" required/>
+          <input class="name-input" placeholder="Full name" type="text" required/>
         </div>
 
         <div class="amount-of-guests name-section">
-          <p class="input-title">People Attending:</p>
-          <input class="guest-input" type="text" required/>
+          <input class="guest-input" placeholder="Number attending" type="text" required/>
         </div>
 
         <div class="name-section">
-          <p class="input-title">Full Name:</p>
-          <input class="name-input" type="text" required/>
+          <input class="lastname-input" placeholder="Phone number" type="text" required/>
         </div>
 
-        <div class="name-section">
-          <p class="input-title">Phone Number:</p>
-          <input class="lastname-input" type="text" required/>
+        
+
+        <div class="food-container">
+          <p class="food-title">Choose your food selection</p>
+
+          <div class="food-section">
+            <input class="beef-input" placeholder="Number of beef plates"  type="text" required/>
+          </div>
+          <div class="food-section">
+            <input class="chicken-input" placeholder="Number of chicken plates"  type="text" required/>
+            
+          </div>
+          <div class="food-section">
+            <input class="kid-input" placeholder="Number of kids Plates" type="text" required/>
+          </div>
+
         </div>
+        
+       
         <button class="rsvp-button">Submit</button>
       </div>
     </div>

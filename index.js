@@ -69,6 +69,10 @@ const rsvpButton = document.querySelector(".rsvp-button");
 const going = document.querySelector(".going");
 const notGoing = document.querySelector(".not-going");
 const rsvpCount = document.querySelector(".rsvp-guest-input");
+const beefCount = document.querySelector('.beef-input')
+const chickenCount = document.querySelector('.chicken-input')
+const kidCount = document.querySelector('.kid-input')
+
 
 rsvpButton.addEventListener("click", (e) => {
   let total = guest.value;
@@ -82,6 +86,9 @@ rsvpButton.addEventListener("click", (e) => {
   if (
     user.value !== "" &&
     guest.value !== "" &&
+    beefCount.value !== "" &&
+    chickenCount.value !== "" &&
+    kidCount.value !== "" &&
     going.value == "on" &&
     guest.value <= rsvpCount.value
   ) {
@@ -99,6 +106,9 @@ rsvpButton.addEventListener("click", (e) => {
             Name: fullname,
             Guests: currentGuests,
             Phone: phoneNumber,
+            BeefPlates: beefCount.value,
+            ChickenPlates: chickenCount.value,
+            KidPlates: kidCount.value 
           });
 
           // console.log("i exist");
@@ -110,6 +120,9 @@ rsvpButton.addEventListener("click", (e) => {
             Name: fullname,
             Guests: total,
             Phone: phoneNumber,
+            BeefPlates: beefCount.value,
+            ChickenPlates: chickenCount.value,
+            KidPlates: kidCount.value 
           });
 
           let validText = document.querySelector(".valid");
