@@ -399,15 +399,14 @@ li {
   font-family: "Ms Madi";
 }
 
-.attend-title{
-  margin: 15px 0px 5px 0;
-}
+
 
 .checkbox-list {
   display: flex;
   justify-content: center;
   padding: 10px 0;
   gap: 20px;
+  margin-top: 10px;
 }
 
 .checkbox-title{
