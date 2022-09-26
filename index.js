@@ -135,7 +135,7 @@ rsvpButton.addEventListener("click", (e) => {
           return;
         }
       });
-  } else if (user.value == "" && guest.value == "") {
+  } else if (user.value == "" && guest.value == "" && rsvpCount.value == "" ) {
     let validText = document.querySelector(".valid");
     validText.innerText = "Please enter a valid input";
     console.log("unvalid input");
