@@ -73,9 +73,6 @@ const beefCount = document.querySelector('.beef-input')
 const chickenCount = document.querySelector('.chicken-input')
 const kidCount = document.querySelector('.kid-input')
 
-beefCount.value = 0;
-chickenCount.value = 0;
-chickenCount.value =0;
 
 
 rsvpButton.addEventListener("click", (e) => {
