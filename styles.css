@@ -643,6 +643,15 @@ input:focus {
   width: 60%;
 }
 
+.time{
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.timeline-link{
+  text-decoration: underline;
+}
+
 .map {
   position: relative;
   padding-top: 100%;
