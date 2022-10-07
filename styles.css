@@ -635,17 +635,21 @@ input:focus {
 .contact-title {
   color: #e0bfb8;
   font-size: 30px;
-  padding-bottom: 20px;
+  margin-bottom: 5px;
+
 }
 
 .address {
   padding-bottom: 20px;
   width: 60%;
 }
-
+.day-location{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
 .time{
   font-weight: 800;
-  font-size: 18px;
+  font-size: 19px;
 }
 
 .timeline-link{
@@ -821,6 +825,7 @@ input:focus {
   margin: auto;
   /* text-align: center; */
   width: 50%;
+  font-size: 18px;
 
 }
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
