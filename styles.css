@@ -731,7 +731,6 @@ input:focus {
 
 .zelle-qr{
   height: 300px;
-  margin-top: 20px;
 }
 
 .reg-text{
@@ -739,6 +738,13 @@ input:focus {
   color: #1b1b1b;
   width: 55%;
   margin: auto;
+}
+
+.scan{
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 12px;
+  color: #1b1b1b;
 }
 
 @media (max-width: 850px) {
