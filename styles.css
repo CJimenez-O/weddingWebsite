@@ -705,6 +705,64 @@ input:focus {
   }
 }
 
+/* Registry card */
+
+#registry{
+  text-align: center;
+  margin: 45px 0;
+}
+
+.registry-card{
+  box-shadow: 0px 0px 5px gray;
+  width: 30%;
+  margin: auto;
+  padding: 25px 0;
+  border-radius: 5px;
+}
+
+.hm-title{
+  font-size: 35px;
+  font-weight: bold;
+  border-bottom: 3px solid;
+  width: 80%;
+  margin: auto;
+  color: #e0bfb8;
+}
+
+.zelle-qr{
+  height: 300px;
+  margin-top: 20px;
+}
+
+.reg-text{
+  font-size: 18px;
+  color: #1b1b1b;
+  width: 55%;
+  margin: auto;
+}
+
+@media (max-width: 850px) {
+  .registry-card{
+    width: 50%;
+  }
+
+  .reg-text{
+    width: 75%;
+  }
+}
+
+@media (max-width: 650px) {
+  .registry-card{
+    width: 80%;
+  }
+
+  .hm-title{
+    font-size: 30px;
+    width: 90%;
+  }
+ 
+}
+
 /* photo gallary */
 
 .gallary-container {
