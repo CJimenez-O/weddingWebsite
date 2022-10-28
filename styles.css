@@ -742,10 +742,22 @@ input:focus {
 
 .scan{
   margin-top: 20px;
-  font-weight: bold;
-  font-size: 12px;
+  font-size: 14px;
   color: #1b1b1b;
 }
+.reg-phone{
+  color: #1b1b1b;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+.reg-name{
+  color: #1b1b1b;
+  font-size: 18px;
+}
+
 
 @media (max-width: 850px) {
   .registry-card{
