@@ -758,6 +758,10 @@ input:focus {
   font-size: 18px;
 }
 
+.amazon{
+  font-weight: bold;
+  text-decoration: underline;
+}
 
 @media (max-width: 850px) {
   .registry-card{
