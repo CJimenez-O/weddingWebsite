@@ -318,9 +318,9 @@ li {
   gap: 10px;
   justify-content: center;
   font-size: 35px;
-  color: #e0bfb8;
+  background-color: #e0bfb8;
+  color: white;
   border-bottom: 2px solid #e0bfb8;
-  width: 40%;
   margin: auto;
   padding-top: 30px;
 }
@@ -348,15 +348,11 @@ li {
     max-height: unset;
   }
 
-  .story-title {
-    width: 30%;
-  }
+  
 }
 
 @media screen and (max-width: 860px) {
-  .story-title {
-    width: 60%;
-  }
+
 }
 
 /* RSVP */
