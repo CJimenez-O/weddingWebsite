@@ -689,6 +689,18 @@ input:focus {
   font-size: 30px;
 }
 
+.seat-text{
+  text-align: center;
+}
+
+.seatChart{
+  padding: 10% 0;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
 .timer-list {
   display: flex;
   gap: 20px;
